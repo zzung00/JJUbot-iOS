@@ -9,10 +9,28 @@ import SwiftUI
 
 struct SplashView: View {
     var body: some View {
-        Text("JJU")
-            .font(Font.custom("JalnanOTF", size: 40))
-            .bold()
-            .foregroundColor(.mainBlue)
+        HStack {
+            Text("JJU")
+                .font(Font.custom("JalnanOTF", size: 50))
+                .bold()
+                .foregroundColor(.mainBlue)
+                .position(x: 170, y: 300)
+            HStack {
+                Text("Bot")
+                    .font(Font.custom("JalnanOTF", size: 50))
+                    .bold()
+                    .foregroundColor(.mainBlue)
+                    .position(x: 70, y: 350)
+            }
+            HStack {
+                Image("instarLogo")
+                    .resizable()
+                    .renderingMode(.template)
+                    .foregroundColor(.mainYellow)
+                    .frame(width: 70, height: 70)
+                    .position(x: -10, y: 300)
+            }
+        }
     }
 }
 
