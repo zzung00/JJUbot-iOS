@@ -15,7 +15,6 @@ struct SplashView: View {
                 .bold()
                 .foregroundColor(.mainBlue)
                 .position(x: 170, y: 300)
-            //
             HStack {
                 Text("Bot")
                     .font(Font.custom("JalnanOTF", size: 50))
