@@ -25,4 +25,5 @@ extension Color {
 
 extension Color {
     static let mainBlue = Color(hex: "#3376aa")
+    static let mainYellow = Color(hex: "#f0d448")
 }
