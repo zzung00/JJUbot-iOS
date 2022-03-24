@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */; };
+		E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BC27EC116800F28396 /* SplashView.swift */; };
 		E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */; };
-		E2EDCD6927EC0A7900A9EC67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD6827EC0A7900A9EC67 /* ContentView.swift */; };
 		E2EDCD6B27EC0A7B00A9EC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD6A27EC0A7B00A9EC67 /* Assets.xcassets */; };
 		E2EDCD6E27EC0A7B00A9EC67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD6D27EC0A7B00A9EC67 /* Preview Assets.xcassets */; };
 		E2EDCD7827EC0A7B00A9EC67 /* JJUbot_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD7727EC0A7B00A9EC67 /* JJUbot_iOSTests.swift */; };
 		E2EDCD8227EC0A7B00A9EC67 /* JJUbot_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD8127EC0A7B00A9EC67 /* JJUbot_iOSUITests.swift */; };
 		E2EDCD8427EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD8327EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift */; };
+		E2EDCD9827EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
+		E2EDCD9927EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
+		E2EDCD9A27EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E2EDCD6327EC0A7900A9EC67 /* JJUbot-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJUbot-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbot_iOSApp.swift; sourceTree = "<group>"; };
-		E2EDCD6827EC0A7900A9EC67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2EDCD6A27EC0A7B00A9EC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EDCD6D27EC0A7B00A9EC67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2EDCD7327EC0A7B00A9EC67 /* JJUbot-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JJUbot-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,8 @@
 		E2EDCD7D27EC0A7B00A9EC67 /* JJUbot-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JJUbot-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDCD8127EC0A7B00A9EC67 /* JJUbot_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbot_iOSUITests.swift; sourceTree = "<group>"; };
 		E2EDCD8327EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbot_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
+		E2EDCD9B27EC0D7E00A9EC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,13 @@
 		E2EDCD6527EC0A7900A9EC67 /* JJUbot-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E2EDCD9B27EC0D7E00A9EC67 /* Info.plist */,
+				E2EDCD9627EC0C1000A9EC67 /* Service */,
+				E2EDCD9327EC0BE600A9EC67 /* Support */,
+				E2EDCD9227EC0BD100A9EC67 /* View */,
+				E2EDCD9127EC0BC900A9EC67 /* ViewModel */,
+				E2EDCD9027EC0BC000A9EC67 /* Model */,
 				E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */,
-				E2EDCD6827EC0A7900A9EC67 /* ContentView.swift */,
 				E2EDCD6A27EC0A7B00A9EC67 /* Assets.xcassets */,
 				E2EDCD6C27EC0A7B00A9EC67 /* Preview Content */,
 			);
@@ -125,6 +137,60 @@
 				E2EDCD8327EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift */,
 			);
 			path = "JJUbot-iOSUITests";
+			sourceTree = "<group>";
+		};
+		E2EDCD9027EC0BC000A9EC67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EDCD9127EC0BC900A9EC67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2EDCD9227EC0BD100A9EC67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C8BC27EC116800F28396 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EDCD9327EC0BE600A9EC67 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E2EDCD9527EC0BF900A9EC67 /* color */,
+				E2EDCD9427EC0BF400A9EC67 /* font */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E2EDCD9427EC0BF400A9EC67 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		E2EDCD9527EC0BF900A9EC67 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		E2EDCD9627EC0C1000A9EC67 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EDCD9827EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */,
 				E2EDCD6E27EC0A7B00A9EC67 /* Preview Assets.xcassets in Resources */,
 				E2EDCD6B27EC0A7B00A9EC67 /* Assets.xcassets in Resources */,
 			);
@@ -240,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EDCD9927EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EDCD9A27EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EDCD6927EC0A7900A9EC67 /* ContentView.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
+				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
+				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +492,7 @@
 				DEVELOPMENT_TEAM = 426JBC325G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JJUbot-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +522,7 @@
 				DEVELOPMENT_TEAM = 426JBC325G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JJUbot-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
