@@ -11,6 +11,7 @@
 		A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */; };
 		E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F5E27EED13500C031C8 /* Dataset.swift */; };
 		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
+		E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6827EF145000C031C8 /* SignInViewModel.swift */; };
 		E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E29EB36A27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E29EB36B27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
@@ -55,6 +56,7 @@
 		CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS_JJUbot_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2332F5E27EED13500C031C8 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E2332F6827EF145000C031C8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		E2EDCD9127EC0BC900A9EC67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E2332F6827EF145000C031C8 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2332F6127EED52100C031C8 /* SignInView.swift in Sources */,
+				E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
 				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
