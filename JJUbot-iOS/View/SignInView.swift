@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+#if canImport(UIKit)
+extension View {
+    func hideKeyBoard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
+
 struct SignInView: View {
     @State private var username = ""
     @State private var password = ""
@@ -26,14 +34,14 @@ struct SignInView: View {
                     .textFieldStyle(.roundedBorder)
                 
                 TextField("비밀번호를 입력하세요", text: $password)
-                    .keyboardType(.decimalPad)
+                    .keyboardType(.default)
                     .frame(width: 300, height: 40, alignment: .center)
                     .cornerRadius(4.0)
                     .textFieldStyle(.roundedBorder)
             }
             
             VStack {
-                Button(action: {}) {
+                Button(action: {hideKeyBoard()}) {
                     Text("로그인")
                         .font(Font.custom("JalnanOTF", size: 20))
                         .foregroundColor(.mainYellow)
