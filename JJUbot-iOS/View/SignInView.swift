@@ -18,6 +18,7 @@ extension View {
 struct SignInView: View {
     @State private var username = ""
     @State private var password = ""
+    @StateObject private var viewModel = SignInViewModel()
     
     var body: some View {
         VStack(alignment: .center, spacing: 60) {
@@ -43,7 +44,7 @@ struct SignInView: View {
             }
             
             VStack {
-                Button(action: {hideKeyBoard()}) {
+                Button(action: {viewModel.SignInRequest(username: username, password: password)}) {
                     Text("로그인")
                         .font(Font.custom("JalnanOTF", size: 20))
                         .foregroundColor(.mainYellow)
