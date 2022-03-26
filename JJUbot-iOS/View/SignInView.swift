@@ -20,7 +20,9 @@ struct SignInView: View {
     @State private var password = ""
     
     var body: some View {
-        VStack(spacing: 30) {
+        VStack(alignment: .center, spacing: 60) {
+            Image("jjLogo")
+            
             Text("로그인 하세요")
                 .bold()
                 .font(Font.custom("JalnanOTF", size: 30))

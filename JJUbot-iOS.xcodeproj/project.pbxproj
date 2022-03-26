@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723C3473AABA10C33DB3D7FD /* Pods_JJUbot_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */; };
+		A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */; };
+		E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F5E27EED13500C031C8 /* Dataset.swift */; };
+		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
+		E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
+		E29EB36A27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
+		E29EB36B27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */; };
 		E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BC27EC116800F28396 /* SplashView.swift */; };
 		E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */; };
@@ -18,6 +25,7 @@
 		E2EDCD9827EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
 		E2EDCD9927EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
 		E2EDCD9A27EC0C6C00A9EC67 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */; };
+		E37C6C232983C1A598A00E5A /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ED28164D515D746E5C5EEF6 /* Pods-JJUbot-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOSTests/Pods-JJUbot-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		4153A325CECBEABE07B6A948 /* Pods-JJUbot-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOSTests/Pods-JJUbot-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DCA69EFBA3743D72FC686F6 /* Pods-JJUbot-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS.release.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS/Pods-JJUbot-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		56041EF0FE24949052EDE5D1 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS-JJUbot-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS_JJUbot_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2332F5E27EED13500C031C8 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E2EDCD6327EC0A7900A9EC67 /* JJUbot-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJUbot-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +69,8 @@
 		E2EDCD8327EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbot_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E2EDCD9727EC0C6C00A9EC67 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
 		E2EDCD9B27EC0D7E00A9EC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ED9A073B9DF21E55A68B6F58 /* Pods-JJUbot-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS/Pods-JJUbot-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723C3473AABA10C33DB3D7FD /* Pods_JJUbot_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37C6C232983C1A598A00E5A /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9D8F14BA65077D1B8883C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */,
+				CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */,
+				707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74325BAE63E63A0E8751A4A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED9A073B9DF21E55A68B6F58 /* Pods-JJUbot-iOS.debug.xcconfig */,
+				4DCA69EFBA3743D72FC686F6 /* Pods-JJUbot-iOS.release.xcconfig */,
+				7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */,
+				56041EF0FE24949052EDE5D1 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.release.xcconfig */,
+				4153A325CECBEABE07B6A948 /* Pods-JJUbot-iOSTests.debug.xcconfig */,
+				1ED28164D515D746E5C5EEF6 /* Pods-JJUbot-iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2EDCD5A27EC0A7900A9EC67 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,8 @@
 				E2EDCD7627EC0A7B00A9EC67 /* JJUbot-iOSTests */,
 				E2EDCD8027EC0A7B00A9EC67 /* JJUbot-iOSUITests */,
 				E2EDCD6427EC0A7900A9EC67 /* Products */,
+				74325BAE63E63A0E8751A4A5 /* Pods */,
+				1A9D8F14BA65077D1B8883C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +190,7 @@
 		E2EDCD9027EC0BC000A9EC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2332F5E27EED13500C031C8 /* Dataset.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				E2A6C8BC27EC116800F28396 /* SplashView.swift */,
+				E2332F6027EED52100C031C8 /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +239,7 @@
 		E2EDCD9627EC0C1000A9EC67 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E29EB36827EDD804004F9C07 /* JJUbotService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -200,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EDCD8727EC0A7B00A9EC67 /* Build configuration list for PBXNativeTarget "JJUbot-iOS" */;
 			buildPhases = (
+				F44144C9E86C5B12E6AAB6DE /* [CP] Check Pods Manifest.lock */,
 				E2EDCD5F27EC0A7900A9EC67 /* Sources */,
 				E2EDCD6027EC0A7900A9EC67 /* Frameworks */,
 				E2EDCD6127EC0A7900A9EC67 /* Resources */,
+				6FC1012195E4B79E5643AF9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EDCD8A27EC0A7B00A9EC67 /* Build configuration list for PBXNativeTarget "JJUbot-iOSTests" */;
 			buildPhases = (
+				2FB97DE16385D60B785E9A7D /* [CP] Check Pods Manifest.lock */,
 				E2EDCD6F27EC0A7B00A9EC67 /* Sources */,
 				E2EDCD7027EC0A7B00A9EC67 /* Frameworks */,
 				E2EDCD7127EC0A7B00A9EC67 /* Resources */,
@@ -235,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EDCD8D27EC0A7B00A9EC67 /* Build configuration list for PBXNativeTarget "JJUbot-iOSUITests" */;
 			buildPhases = (
+				7BB1DB9E1D512B3260FEC7DE /* [CP] Check Pods Manifest.lock */,
 				E2EDCD7927EC0A7B00A9EC67 /* Sources */,
 				E2EDCD7A27EC0A7B00A9EC67 /* Frameworks */,
 				E2EDCD7B27EC0A7B00A9EC67 /* Resources */,
+				EC1172B5180F0F7BB76F09C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,13 +377,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FB97DE16385D60B785E9A7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJUbot-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC1012195E4B79E5643AF9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS/Pods-JJUbot-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS/Pods-JJUbot-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS/Pods-JJUbot-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB1DB9E1D512B3260FEC7DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJUbot-iOS-JJUbot-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1172B5180F0F7BB76F09C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44144C9E86C5B12E6AAB6DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJUbot-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2EDCD5F27EC0A7900A9EC67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2332F6127EED52100C031C8 /* SignInView.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
+				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
+				E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EDCD7827EC0A7B00A9EC67 /* JJUbot_iOSTests.swift in Sources */,
+				E29EB36A27EDD804004F9C07 /* JJUbotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EDCD8427EC0A7B00A9EC67 /* JJUbot_iOSUITestsLaunchTests.swift in Sources */,
+				E29EB36B27EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2EDCD8227EC0A7B00A9EC67 /* JJUbot_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +647,7 @@
 		};
 		E2EDCD8827EC0A7B00A9EC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9A073B9DF21E55A68B6F58 /* Pods-JJUbot-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +678,7 @@
 		};
 		E2EDCD8927EC0A7B00A9EC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DCA69EFBA3743D72FC686F6 /* Pods-JJUbot-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -543,6 +709,7 @@
 		};
 		E2EDCD8B27EC0A7B00A9EC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4153A325CECBEABE07B6A948 /* Pods-JJUbot-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +730,7 @@
 		};
 		E2EDCD8C27EC0A7B00A9EC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED28164D515D746E5C5EEF6 /* Pods-JJUbot-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +751,7 @@
 		};
 		E2EDCD8E27EC0A7B00A9EC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +770,7 @@
 		};
 		E2EDCD8F27EC0A7B00A9EC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56041EF0FE24949052EDE5D1 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
