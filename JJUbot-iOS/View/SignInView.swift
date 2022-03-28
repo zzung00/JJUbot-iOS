@@ -36,11 +36,13 @@ struct SignInView: View {
                     .cornerRadius(4.0)
                     .textFieldStyle(.roundedBorder)
                 
-                TextField("비밀번호를 입력하세요", text: $password)
+                SecureField("비밀번호를 입력하세요", text: $password)
                     .keyboardType(.default)
                     .frame(width: 300, height: 40, alignment: .center)
                     .cornerRadius(4.0)
                     .textFieldStyle(.roundedBorder)
+                    .textInputAutocapitalization(.never)
+                    
             }
             
             VStack {
