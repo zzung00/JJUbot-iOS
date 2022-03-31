@@ -17,6 +17,7 @@
 		E29EB36B27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */; };
 		E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BC27EC116800F28396 /* SplashView.swift */; };
+		E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD703D27F5884300E147D8 /* SendingView.swift */; };
 		E2C3FCF527F155E1009F6E1C /* JJParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3FCF427F155E1009F6E1C /* JJParser.swift */; };
 		E2C3FCF727F18B0D009F6E1C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3FCF627F18B0D009F6E1C /* MainView.swift */; };
 		E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */; };
@@ -62,6 +63,7 @@
 		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E2BD703D27F5884300E147D8 /* SendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingView.swift; sourceTree = "<group>"; };
 		E2C3FCF427F155E1009F6E1C /* JJParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJParser.swift; sourceTree = "<group>"; };
 		E2C3FCF627F18B0D009F6E1C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E2EDCD6327EC0A7900A9EC67 /* JJUbot-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJUbot-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +217,7 @@
 				E2A6C8BC27EC116800F28396 /* SplashView.swift */,
 				E2332F6027EED52100C031C8 /* SignInView.swift */,
 				E2C3FCF627F18B0D009F6E1C /* MainView.swift */,
+				E2BD703D27F5884300E147D8 /* SendingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
 				E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
+				E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

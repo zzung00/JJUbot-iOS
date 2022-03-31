@@ -16,37 +16,45 @@ struct JJUbotList: View {
 
 struct MainView: View {
     @State private var showAlert = false
+    @State private var isActive = false
     
     var body: some View {
         VStack {
-            VStack {
-                Text("JJUbot")
-                    .font(Font.custom("JalnanOTF", size: 25))
-                    .foregroundColor(.white)
+            if isActive == true {
+                SendingView()
             }
-            
-            ZStack {
-                Section {
-                    List {
-                        JJUbotList(name: "JJUbot0")
-                        JJUbotList(name: "JJUbot1")
-                        JJUbotList(name: "JJUbot2")
+            else {
+                VStack {
+                    Text("JJUbot")
+                        .font(Font.custom("JalnanOTF", size: 25))
+                        .foregroundColor(.white)
+                }
+                
+                ZStack {
+                    Section {
+                        List {
+                            JJUbotList(name: "JJUbot0")
+                            JJUbotList(name: "JJUbot1")
+                            JJUbotList(name: "JJUbot2")
+                        }
                     }
                 }
-            }
-            
-            VStack {
-                //배달봇 미선택하고 호출 버튼만 누를 경우, 선택하라는 경고 창 표시
-                //다이얼로그 버튼마다 액션 추가 예정
-                Button(action: {self.showAlert = true}) {
-                    Text("배달봇 호출")
-                        .foregroundColor(.mainYellow)
-                        .font(Font.custom("JalnanOTF", size: 30))
-                }
-                .background(Color.mainBlue)
-                .frame(width: 200, height: 45, alignment: .center)
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("JJUbot-Service"), message: Text("배달봇을 호출하시겠습니까?"), primaryButton: .destructive(Text("예")), secondaryButton: .cancel(Text("아니오")))
+                
+                VStack {
+                    //배달봇 미선택하고 호출 버튼만 누를 경우, 선택하라는 경고 창 표시
+                    //다이얼로그 버튼마다 액션 추가 예정
+                    Button(action: {self.showAlert = true}) {
+                        Text("배달봇 호출")
+                            .foregroundColor(.mainYellow)
+                            .font(Font.custom("JalnanOTF", size: 30))
+                    }
+                    .background(Color.mainBlue)
+                    .frame(width: 200, height: 45, alignment: .center)
+                    .alert(isPresented: $showAlert) {
+                        Alert(title: Text("JJUbot-Service"), message: Text("배달봇을 호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
+                            self.isActive = true
+                        }, secondaryButton: .cancel(Text("아니오")))
+                    }
                 }
             }
         }
