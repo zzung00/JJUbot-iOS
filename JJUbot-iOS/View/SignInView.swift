@@ -42,7 +42,6 @@ struct SignInView: View {
                     .cornerRadius(4.0)
                     .textFieldStyle(.roundedBorder)
                     .textInputAutocapitalization(.never)
-                    
             }
             
             VStack {
