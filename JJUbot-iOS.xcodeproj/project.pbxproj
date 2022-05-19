@@ -12,6 +12,9 @@
 		E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F5E27EED13500C031C8 /* Dataset.swift */; };
 		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
 		E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6827EF145000C031C8 /* SignInViewModel.swift */; };
+		E23D52BE2836116400D88940 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D52BD2836116400D88940 /* CardModifier.swift */; };
+		E23D52C0283611D500D88940 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D52BF283611D500D88940 /* ProductCard.swift */; };
+		E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BB529283497CB0053302E /* ConfirmView.swift */; };
 		E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E29EB36A27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E29EB36B27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
@@ -60,6 +63,9 @@
 		E2332F5E27EED13500C031C8 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E2332F6827EF145000C031C8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E23D52BD2836116400D88940 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		E23D52BF283611D500D88940 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		E28BB529283497CB0053302E /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 		E2EDCD9127EC0BC900A9EC67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E23D52BD2836116400D88940 /* CardModifier.swift */,
 				E2332F6827EF145000C031C8 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
@@ -218,6 +225,8 @@
 				E2332F6027EED52100C031C8 /* SignInView.swift */,
 				E2C3FCF627F18B0D009F6E1C /* MainView.swift */,
 				E2BD703D27F5884300E147D8 /* SendingView.swift */,
+				E28BB529283497CB0053302E /* ConfirmView.swift */,
+				E23D52BF283611D500D88940 /* ProductCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,12 +508,15 @@
 			files = (
 				E2C3FCF527F155E1009F6E1C /* JJParser.swift in Sources */,
 				E2C3FCF727F18B0D009F6E1C /* MainView.swift in Sources */,
+				E23D52BE2836116400D88940 /* CardModifier.swift in Sources */,
 				E2332F6127EED52100C031C8 /* SignInView.swift in Sources */,
+				E23D52C0283611D500D88940 /* ProductCard.swift in Sources */,
 				E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
 				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
 				E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */,
+				E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
 				E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */,
 			);
