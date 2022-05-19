@@ -25,7 +25,7 @@ struct MainView: View {
                         .navigationBarTitleDisplayMode(.inline)
                     
                     ZStack {
-                        Color.gray
+                        Color.lightGray
                             .edgesIgnoringSafeArea(.all)
                         ScrollView(.vertical, showsIndicators: false) {
                             VStack {
