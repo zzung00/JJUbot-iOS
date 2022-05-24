@@ -212,7 +212,6 @@
 		E2EDCD9127EC0BC900A9EC67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E23D52BD2836116400D88940 /* CardModifier.swift */,
 				E2332F6827EF145000C031C8 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
@@ -221,6 +220,7 @@
 		E2EDCD9227EC0BD100A9EC67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E23D52BD2836116400D88940 /* CardModifier.swift */,
 				E2A6C8BC27EC116800F28396 /* SplashView.swift */,
 				E2332F6027EED52100C031C8 /* SignInView.swift */,
 				E2C3FCF627F18B0D009F6E1C /* MainView.swift */,
