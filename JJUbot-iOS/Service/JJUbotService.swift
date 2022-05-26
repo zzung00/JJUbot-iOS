@@ -13,7 +13,7 @@ class JJUbotService {
     static let baseUrl = "https://instar.jj.ac.kr/XMain"
     static let shared = JJUbotService()
     
-    func signInJJInstar(username: String, password: String) {
+    func signInJJInstar(username: String, password: String, completion: @escaping (String?) -> Void) {
         let parameters = """
         <?xml version="1.0" encoding="UTF-8"?>
                 <Root xmlns="http://www.nexacroplatform.com/platform/dataset">
@@ -92,10 +92,11 @@ class JJUbotService {
             let xml = XMLHash.lazy(result)
             do {
                 let info = try xml["Root"]["Dataset"].withAttribute("id", "ds_info")
-                print(try info["Rows"]["Row"]["Col"].withAttribute("id", "MEM_INFO").element!.text)
+                let signInResponse = try info["Rows"]["Row"]["Col"].withAttribute("id", "MEM_INFO").element!.text
+                completion(signInResponse)
             }
             catch {
-                
+                completion(nil)
             }
         }
     }

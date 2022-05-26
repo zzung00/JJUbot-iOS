@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		723C3473AABA10C33DB3D7FD /* Pods_JJUbot_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */; };
 		A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */; };
-		E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F5E27EED13500C031C8 /* Dataset.swift */; };
+		E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BB203283FC3C1000F088C /* CardModifier.swift */; };
 		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
 		E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6827EF145000C031C8 /* SignInViewModel.swift */; };
-		E23D52BE2836116400D88940 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D52BD2836116400D88940 /* CardModifier.swift */; };
 		E23D52C0283611D500D88940 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D52BF283611D500D88940 /* ProductCard.swift */; };
 		E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BB529283497CB0053302E /* ConfirmView.swift */; };
 		E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
@@ -21,7 +20,6 @@
 		E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */; };
 		E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C8BC27EC116800F28396 /* SplashView.swift */; };
 		E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD703D27F5884300E147D8 /* SendingView.swift */; };
-		E2C3FCF527F155E1009F6E1C /* JJParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3FCF427F155E1009F6E1C /* JJParser.swift */; };
 		E2C3FCF727F18B0D009F6E1C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3FCF627F18B0D009F6E1C /* MainView.swift */; };
 		E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */; };
 		E2EDCD6B27EC0A7B00A9EC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EDCD6A27EC0A7B00A9EC67 /* Assets.xcassets */; };
@@ -60,17 +58,15 @@
 		707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS_JJUbot_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2332F5E27EED13500C031C8 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		E21BB203283FC3C1000F088C /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E2332F6827EF145000C031C8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
-		E23D52BD2836116400D88940 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		E23D52BF283611D500D88940 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		E28BB529283497CB0053302E /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E2A6C8BC27EC116800F28396 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E2BD703D27F5884300E147D8 /* SendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingView.swift; sourceTree = "<group>"; };
-		E2C3FCF427F155E1009F6E1C /* JJParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJParser.swift; sourceTree = "<group>"; };
 		E2C3FCF627F18B0D009F6E1C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E2EDCD6327EC0A7900A9EC67 /* JJUbot-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJUbot-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDCD6627EC0A7900A9EC67 /* JJUbot_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbot_iOSApp.swift; sourceTree = "<group>"; };
@@ -204,7 +200,6 @@
 		E2EDCD9027EC0BC000A9EC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E2332F5E27EED13500C031C8 /* Dataset.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,13 +215,13 @@
 		E2EDCD9227EC0BD100A9EC67 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E23D52BD2836116400D88940 /* CardModifier.swift */,
 				E2A6C8BC27EC116800F28396 /* SplashView.swift */,
 				E2332F6027EED52100C031C8 /* SignInView.swift */,
 				E2C3FCF627F18B0D009F6E1C /* MainView.swift */,
 				E2BD703D27F5884300E147D8 /* SendingView.swift */,
 				E28BB529283497CB0053302E /* ConfirmView.swift */,
 				E23D52BF283611D500D88940 /* ProductCard.swift */,
+				E21BB203283FC3C1000F088C /* CardModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				E29EB36827EDD804004F9C07 /* JJUbotService.swift */,
-				E2C3FCF427F155E1009F6E1C /* JJParser.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -506,16 +500,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C3FCF527F155E1009F6E1C /* JJParser.swift in Sources */,
 				E2C3FCF727F18B0D009F6E1C /* MainView.swift in Sources */,
-				E23D52BE2836116400D88940 /* CardModifier.swift in Sources */,
 				E2332F6127EED52100C031C8 /* SignInView.swift in Sources */,
 				E23D52C0283611D500D88940 /* ProductCard.swift in Sources */,
 				E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */,
+				E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
 				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
-				E2332F5F27EED13500C031C8 /* Dataset.swift in Sources */,
 				E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
 				E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */,
