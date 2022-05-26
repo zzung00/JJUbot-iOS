@@ -2,7 +2,7 @@
 //  CardModifier.swift
 //  JJUbot-iOS
 //
-//  Created by 이정현 on 2022/05/19.
+//  Created by 이정현 on 2022/05/26.
 //
 
 import Foundation
