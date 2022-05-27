@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 #if canImport(UIKit)
 extension View {
@@ -56,6 +57,9 @@ struct SignInView: View {
                     .frame(width: 200, height: 45, alignment: .center)
                     .background(Color.mainBlue)
                     .cornerRadius(6.0)
+                    .toast(isPresenting: $viewModel.showToast, duration: 2, tapToDismiss: true) {
+                        AlertToast(displayMode: .hud, type: .systemImage("xmark", .red), title: "로그인 실패", subTitle: "다시 입력해주세요")
+                    }
                 }
             }
         }
