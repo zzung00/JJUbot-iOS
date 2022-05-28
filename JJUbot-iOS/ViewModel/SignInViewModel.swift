@@ -12,7 +12,7 @@ class SignInViewModel: ObservableObject {
     @Published var isSuccess: Bool = false
     @Published var showToast = false
     
-    func SignInRequest(username: String, password: String) {
+    func signInRequest(username: String, password: String) {
         JJUbotService.shared.signInJJInstar(username: username, password: password) {
             result in
             if result == nil {

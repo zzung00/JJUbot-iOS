@@ -49,7 +49,7 @@ struct SignInView: View {
                 }
                 
                 VStack {
-                    Button(action: {viewModel.SignInRequest(username: username, password: password)}) {
+                    Button(action: {viewModel.signInRequest(username: username, password: password)}) {
                         Text("로그인")
                             .font(Font.custom("JalnanOTF", size: 20))
                             .foregroundColor(.mainYellow)
