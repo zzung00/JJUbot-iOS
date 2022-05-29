@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		723C3473AABA10C33DB3D7FD /* Pods_JJUbot_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */; };
 		A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */; };
+		E217E1E728433FE800139570 /* DeliveryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217E1E628433FE800139570 /* DeliveryRequest.swift */; };
 		E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BB203283FC3C1000F088C /* CardModifier.swift */; };
 		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
 		E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6827EF145000C031C8 /* SignInViewModel.swift */; };
 		E23D52C0283611D500D88940 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D52BF283611D500D88940 /* ProductCard.swift */; };
-		E27BA4942841FD580054EA77 /* SignInXmain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA4932841FD580054EA77 /* SignInXmain.swift */; };
+		E27BA4942841FD580054EA77 /* SignInXMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA4932841FD580054EA77 /* SignInXMain.swift */; };
+		E27BA497284209C70054EA77 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA496284209C70054EA77 /* MainViewModel.swift */; };
 		E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BB529283497CB0053302E /* ConfirmView.swift */; };
 		E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
 		E29EB36A27EDD804004F9C07 /* JJUbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EB36827EDD804004F9C07 /* JJUbotService.swift */; };
@@ -59,11 +61,13 @@
 		707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS_JJUbot_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E217E1E628433FE800139570 /* DeliveryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryRequest.swift; sourceTree = "<group>"; };
 		E21BB203283FC3C1000F088C /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E2332F6827EF145000C031C8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E23D52BF283611D500D88940 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
-		E27BA4932841FD580054EA77 /* SignInXmain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInXmain.swift; path = "JJUbot-iOS/Model/SignInXmain.swift"; sourceTree = SOURCE_ROOT; };
+		E27BA4932841FD580054EA77 /* SignInXMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInXMain.swift; path = "JJUbot-iOS/Model/SignInXMain.swift"; sourceTree = SOURCE_ROOT; };
+		E27BA496284209C70054EA77 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E28BB529283497CB0053302E /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		E29EB36827EDD804004F9C07 /* JJUbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJUbotService.swift; sourceTree = "<group>"; };
 		E2A6C8BA27EC0FC100F28396 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -136,10 +140,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E217E1E528433FAD00139570 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				E217E1E628433FE800139570 /* DeliveryRequest.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
 		E27BA4952841FFCB0054EA77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E27BA4932841FD580054EA77 /* SignInXmain.swift */,
+				E27BA4932841FD580054EA77 /* SignInXMain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +181,7 @@
 		E2EDCD6527EC0A7900A9EC67 /* JJUbot-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E217E1E528433FAD00139570 /* Dto */,
 				E27BA4952841FFCB0054EA77 /* Model */,
 				E2EDCD9B27EC0D7E00A9EC67 /* Info.plist */,
 				E2EDCD9627EC0C1000A9EC67 /* Service */,
@@ -211,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				E2332F6827EF145000C031C8 /* SignInViewModel.swift */,
+				E27BA496284209C70054EA77 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -508,11 +522,13 @@
 				E23D52C0283611D500D88940 /* ProductCard.swift in Sources */,
 				E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */,
 				E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */,
+				E27BA497284209C70054EA77 /* MainViewModel.swift in Sources */,
 				E2EDCD6727EC0A7900A9EC67 /* JJUbot_iOSApp.swift in Sources */,
 				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
 				E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */,
-				E27BA4942841FD580054EA77 /* SignInXmain.swift in Sources */,
+				E27BA4942841FD580054EA77 /* SignInXMain.swift in Sources */,
+				E217E1E728433FE800139570 /* DeliveryRequest.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,
 				E2BD703E27F5884300E147D8 /* SendingView.swift in Sources */,
 			);
