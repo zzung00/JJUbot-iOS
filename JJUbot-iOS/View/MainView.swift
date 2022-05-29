@@ -10,6 +10,11 @@ import SwiftUI
 struct MainView: View {
     @State private var showAlert = false
     @State private var isActive = false
+    private var viewModel: MainViewModel
+    
+    init(username: String) {
+        viewModel = MainViewModel(username: username)
+    }
     
     var body: some View {
         NavigationView {
@@ -49,6 +54,7 @@ struct MainView: View {
                         .alert(isPresented: $showAlert) {
                         Alert(title: Text("JJUbot-Service"), message: Text("배달봇을 호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
                             self.isActive = true
+                            viewModel.callJJUbot()
                             }, secondaryButton: .cancel(Text("아니오")))
                         }
                     }
@@ -60,6 +66,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(username: "")
     }
 }

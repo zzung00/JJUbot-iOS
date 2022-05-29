@@ -23,7 +23,7 @@ struct SignInView: View {
     
     var body: some View {
         if viewModel.isSuccess {
-            MainView()
+            MainView(username: viewModel.name!)
         }else {
             VStack(alignment: .center, spacing: 60) {
                 Image("jjLogo")
