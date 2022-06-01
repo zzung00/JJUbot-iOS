@@ -18,21 +18,64 @@ struct SendingView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                    Image(systemName: "xmark")
-                        .font(.title)
-                        .foregroundColor(.red)
-                        .padding(20)
+                HStack {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Button(action:{self.presentationMode.wrappedValue.dismiss()}) {
+                        Image(systemName: "xmark")
+                            .font(.title)
+                            .foregroundColor(.red)
+                            .padding(20)
+                        }
+                        Text("배송 정보를 정확하게 입력해주세요")
+                            .foregroundColor(.black)
+                            .font(Font.custom("JalnanOTF", size: 17))
+                            .frame(width: 300)
+                            .padding(5)
+                    }
                 }
-                Spacer()
-            }
-            
-            VStack(alignment: .leading) {
-                Text("배송 정보를 정확하게 입력해주세요")
-                    .foregroundColor(.black)
-                    .font(Font.custom("JalnanOTF", size: 17))
-                    .frame(width: 300)
-                    .position(x: 150, y: 80)
+                .padding([.trailing], 70)
+                
+                HStack {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("배송지 *")
+                            .foregroundColor(.black)
+                            .font(Font.custom("JalnanOTF", size: 17))
+                            .frame(width: 90, height: 20, alignment: .topLeading)
+                            .padding(5)
+                        
+                        TextField("배송지를 입력해주세요", text: $destination)
+                            .frame(width: 280, height: 70)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .keyboardType(.default)
+                            .disableAutocorrection(true)
+                        
+                        Text("수령인 *")
+                            .foregroundColor(.black)
+                            .font(Font.custom("JalnanOTF", size: 17))
+                            .frame(width: 90, height: 20, alignment: .topLeading)
+                            .padding(5)
+                        
+                        TextField("수령인을 입력해주세요", text: $reciever)
+                            .frame(width: 280, height: 70)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .keyboardType(.default)
+                            .disableAutocorrection(true)
+                    }
+                }
+                .padding([.leading, .trailing, .vertical], 50)
+                .padding([.bottom], 100)
+                
+                VStack {
+                    Button(action: {}) {
+                        Text("배달봇 호출")
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.mainYellow)
+                            .padding()
+                            .font(Font.custom("JalnanOTF", size: 30))
+                    }
+                    .background(Color.mainBlue)
+                }
+                .padding([.top], 190)
             }
         }
     }
@@ -43,19 +86,3 @@ struct SendingView_Previews: PreviewProvider {
         SendingView()
     }
 }
-
-
-//                            TextField("목적지", text: $destination)
-//                                .frame(width: 350, height: 100)
-//                                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                                .keyboardType(.default)
-//                                .disableAutocorrection(true)
-//
-//                            Text("수신자 학번을 입력하세요")
-//                                .font(Font.custom("JalnanOTF", size: 25))
-//
-//                            TextField("수신자 학번", text: $reciever)
-//                                .frame(width: 350, height: 100)
-//                                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                                .keyboardType(.default)
-//                                .disableAutocorrection(true)
