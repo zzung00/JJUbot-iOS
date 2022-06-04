@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		723C3473AABA10C33DB3D7FD /* Pods_JJUbot_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C01FF1A9F64EE1A95A2CC1 /* Pods_JJUbot_iOS.framework */; };
 		A4E03837FF5A01629FD7F694 /* Pods_JJUbot_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */; };
+		E207AB94284B1C6F00810E70 /* SendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AB93284B1C6F00810E70 /* SendingViewModel.swift */; };
+		E207AB98284B53C900810E70 /* MQTTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AB97284B53C900810E70 /* MQTTService.swift */; };
+		E207AB9A284B543800810E70 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AB99284B543800810E70 /* UserService.swift */; };
 		E217E1E728433FE800139570 /* DeliveryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217E1E628433FE800139570 /* DeliveryRequest.swift */; };
 		E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BB203283FC3C1000F088C /* CardModifier.swift */; };
 		E2332F6127EED52100C031C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332F6027EED52100C031C8 /* SignInView.swift */; };
@@ -61,6 +64,9 @@
 		707F8BC4A34808AA56EFF135 /* Pods_JJUbot_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D4E1D5648B736B85E0251 /* Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-JJUbot-iOS-JJUbot-iOSUITests/Pods-JJUbot-iOS-JJUbot-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFEB1E3C7BD405BB94023222 /* Pods_JJUbot_iOS_JJUbot_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJUbot_iOS_JJUbot_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E207AB93284B1C6F00810E70 /* SendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingViewModel.swift; sourceTree = "<group>"; };
+		E207AB97284B53C900810E70 /* MQTTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTService.swift; sourceTree = "<group>"; };
+		E207AB99284B543800810E70 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E217E1E628433FE800139570 /* DeliveryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryRequest.swift; sourceTree = "<group>"; };
 		E21BB203283FC3C1000F088C /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		E2332F6027EED52100C031C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -225,6 +231,7 @@
 			children = (
 				E2332F6827EF145000C031C8 /* SignInViewModel.swift */,
 				E27BA496284209C70054EA77 /* MainViewModel.swift */,
+				E207AB93284B1C6F00810E70 /* SendingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -272,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				E29EB36827EDD804004F9C07 /* JJUbotService.swift */,
+				E207AB97284B53C900810E70 /* MQTTService.swift */,
+				E207AB99284B543800810E70 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -519,6 +528,7 @@
 			files = (
 				E2C3FCF727F18B0D009F6E1C /* MainView.swift in Sources */,
 				E2332F6127EED52100C031C8 /* SignInView.swift in Sources */,
+				E207AB9A284B543800810E70 /* UserService.swift in Sources */,
 				E23D52C0283611D500D88940 /* ProductCard.swift in Sources */,
 				E2332F6927EF145000C031C8 /* SignInViewModel.swift in Sources */,
 				E21BB204283FC3C1000F088C /* CardModifier.swift in Sources */,
@@ -527,6 +537,8 @@
 				E29EB36927EDD804004F9C07 /* JJUbotService.swift in Sources */,
 				E2A6C8BB27EC0FC100F28396 /* UIColorExtension.swift in Sources */,
 				E28BB52A283497CB0053302E /* ConfirmView.swift in Sources */,
+				E207AB94284B1C6F00810E70 /* SendingViewModel.swift in Sources */,
+				E207AB98284B53C900810E70 /* MQTTService.swift in Sources */,
 				E27BA4942841FD580054EA77 /* SignInXMain.swift in Sources */,
 				E217E1E728433FE800139570 /* DeliveryRequest.swift in Sources */,
 				E2A6C8BD27EC116800F28396 /* SplashView.swift in Sources */,

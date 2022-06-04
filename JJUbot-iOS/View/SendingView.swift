@@ -10,7 +10,11 @@ import SwiftUI
 struct SendingView: View {
     @State private var destination = ""
     @State private var reciever = ""
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var showAlert = false
+    @State private var isActive = false
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var mqttService: MQTTService
+    @EnvironmentObject var userService: UserService
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -66,7 +70,7 @@ struct SendingView: View {
                 .padding([.bottom], 100)
                 
                 VStack {
-                    Button(action: {print("!!!!!!!!!!!!!")}) {
+                    Button(action: {showAlert = true}) {
                         Text("배달봇 호출")
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.mainYellow)
@@ -75,6 +79,12 @@ struct SendingView: View {
                     }
                     .background(Color.mainBlue)
                     .disabled(destination.isEmpty || reciever.isEmpty)
+                    .alert(isPresented: $showAlert) {
+                        Alert(title: Text("JJUbot-Service"), message: Text("배송지: \(destination) 수령인: \(reciever)" + "호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
+                            self.isActive = true
+                            mqttService.callJJUbot(username: userService.username, destination: destination)
+                        }, secondaryButton: .cancel(Text("아니오")))
+                    }
                 }
                 .padding([.top], 190)
             }
@@ -87,5 +97,3 @@ struct SendingView_Previews: PreviewProvider {
         SendingView()
     }
 }
-
-//호출 버튼 누르면 alert로 정보 재 확인 표시 (예: )

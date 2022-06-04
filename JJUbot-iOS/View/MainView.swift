@@ -10,10 +10,11 @@ import SwiftUI
 struct MainView: View {
     @State private var showAlert = false
     @State private var isActive = false
-    private var viewModel: MainViewModel
+    @StateObject private var mqttService = MQTTService()
+    private var userService: UserService
     
     init(username: String) {
-        viewModel = MainViewModel(username: username)
+        userService = UserService(username: username)
     }
     
     var body: some View {
@@ -30,6 +31,7 @@ struct MainView: View {
                         .edgesIgnoringSafeArea(.all)
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack {
+                            //LazyVGrid 적용 예정
                             ProductCard(image: "instarLogo", title: "JJUbot")
                                 .frame(alignment: .center)
                         }
@@ -48,7 +50,6 @@ struct MainView: View {
                     .alert(isPresented: $showAlert) {
                     Alert(title: Text("JJUbot-Service"), message: Text("배달봇을 호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
                         self.isActive = true
-                        viewModel.callJJUbot()
                         }, secondaryButton: .cancel(Text("아니오")))
                     }
                     .sheet(isPresented: $isActive) {
@@ -57,6 +58,8 @@ struct MainView: View {
                 }
             }
         }
+        .environmentObject(mqttService)
+        .environmentObject(userService)
     }
 }
 
