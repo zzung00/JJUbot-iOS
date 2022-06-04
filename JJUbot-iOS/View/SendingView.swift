@@ -66,7 +66,7 @@ struct SendingView: View {
                 .padding([.bottom], 100)
                 
                 VStack {
-                    Button(action: {}) {
+                    Button(action: {print("!!!!!!!!!!!!!")}) {
                         Text("배달봇 호출")
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.mainYellow)
@@ -74,6 +74,7 @@ struct SendingView: View {
                             .font(Font.custom("JalnanOTF", size: 30))
                     }
                     .background(Color.mainBlue)
+                    .disabled(destination.isEmpty || reciever.isEmpty)
                 }
                 .padding([.top], 190)
             }
@@ -86,3 +87,5 @@ struct SendingView_Previews: PreviewProvider {
         SendingView()
     }
 }
+
+//호출 버튼 누르면 alert로 정보 재 확인 표시 (예: )
