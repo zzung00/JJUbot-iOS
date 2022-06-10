@@ -40,7 +40,7 @@ struct MainView: View {
                         
                 VStack {
                     Button(action: {self.showAlert = true}) {
-                        Text("배달봇 호출")
+                        Text("배송지 입력")
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.mainYellow)
                             .padding()
@@ -48,7 +48,7 @@ struct MainView: View {
                     }
                     .background(Color.mainBlue)
                     .alert(isPresented: $showAlert) {
-                    Alert(title: Text("JJUbot-Service"), message: Text("배달봇을 호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
+                    Alert(title: Text("JJUbot-Service"), message: Text("배송지를 입력하시겠습니까?"), primaryButton: .destructive(Text("예")) {
                         self.isActive = true
                         }, secondaryButton: .cancel(Text("아니오")))
                     }
