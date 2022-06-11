@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SendingView: View {
+    @State private var source = ""
     @State private var destination = ""
     @State private var reciever = ""
     @State private var showAlert = false
@@ -28,7 +29,7 @@ struct SendingView: View {
                         Image(systemName: "xmark")
                             .font(.title)
                             .foregroundColor(.red)
-                            .padding(20)
+                            .padding(15)
                         }
                         Text("배송 정보를 정확하게 입력해주세요")
                             .foregroundColor(.black)
@@ -38,9 +39,22 @@ struct SendingView: View {
                     }
                 }
                 .padding([.trailing], 70)
+                .padding([.top], 20)
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 0) {
+                        Text("출발지 *")
+                            .foregroundColor(.black)
+                            .font(Font.custom("JalnanOTF", size: 17))
+                            .frame(width: 90, height: 20, alignment: .topLeading)
+                            .padding(5)
+                        
+                        TextField("배송지를 입력해주세요", text: $source)
+                            .frame(width: 280, height: 70)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .keyboardType(.default)
+                            .disableAutocorrection(true)
+                        
                         Text("배송지 *")
                             .foregroundColor(.black)
                             .font(Font.custom("JalnanOTF", size: 17))
@@ -66,8 +80,8 @@ struct SendingView: View {
                             .disableAutocorrection(true)
                     }
                 }
-                .padding([.leading, .trailing, .vertical], 50)
-                .padding([.bottom], 100)
+                .padding([.leading, .trailing, .vertical], 30)
+                .padding([.bottom], 70)
                 
                 VStack {
                     Button(action: {showAlert = true}) {
@@ -78,7 +92,7 @@ struct SendingView: View {
                             .font(Font.custom("JalnanOTF", size: 30))
                     }
                     .background(Color.mainBlue)
-                    .disabled(destination.isEmpty || reciever.isEmpty)
+                    .disabled(source.isEmpty || destination.isEmpty || reciever.isEmpty)
                     .alert(isPresented: $showAlert) {
                         Alert(title: Text("JJUbot-Service"), message: Text("배송지: \(destination) 수령인: \(reciever)" + "호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
                             self.isActive = true
@@ -86,7 +100,7 @@ struct SendingView: View {
                         }, secondaryButton: .cancel(Text("아니오")))
                     }
                 }
-                .padding([.top], 190)
+                .padding([.top], 180)
             }
         }
     }
