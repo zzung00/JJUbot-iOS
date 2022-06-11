@@ -99,7 +99,7 @@ struct SendingView: View {
                         .alert(isPresented: $showAlert) {
                             Alert(title: Text("JJUbot-Service"), message: Text("배송지: \(destination) 수령인: \(reciever)" + "호출하시겠습니까?"), primaryButton: .destructive(Text("예")) {
                                 self.isActive = true
-                                mqttService.callJJUbot(username: userService.username, destination: destination)
+                                mqttService.callJJUbot(source: source, username: userService.username, destination: destination)
                             }, secondaryButton: .cancel(Text("아니오")))
                         }
                     }

@@ -20,8 +20,8 @@ class MQTTService: ObservableObject {
         print("mqttConnect!!!!")
     }
     
-    func callJJUbot(username: String, destination: String) {
-        let deliveryRequeset = DeliveryRequest(username: username, destination: destination)
+    func callJJUbot(source: String, username: String, destination: String) {
+        let deliveryRequeset = DeliveryRequest(source: source, username: username, destination: destination)
         let jsonEncoder = JSONEncoder()
         let jsonData = try! jsonEncoder.encode(deliveryRequeset)
         mqtt.publish("/call", withString: String(data: jsonData, encoding: .utf8)!)

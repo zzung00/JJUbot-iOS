@@ -8,6 +8,7 @@
 import Foundation
 
 struct DeliveryRequest: Codable {
+    var source: String
     var username: String
     var destination: String
 }
